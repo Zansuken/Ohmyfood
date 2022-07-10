@@ -1,0 +1,59 @@
+@import "../../constants/index";
+
+.redirection {
+  background-color: $bg-light-gray;
+  .location {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0.8rem;
+    background-color: $bg-gray;
+    .location-wrapper {
+      display: flex;
+      gap: 0.8rem;
+      width: 155.54px;
+      img {
+        height: 1.1rem;
+      }
+      .location-current {
+        flex: 1;
+        font-weight: 600;
+      }
+    }
+  }
+  .redirection-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.8rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.5;
+      max-width: 250px;
+      line-height: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    .redirect-button {
+      padding: 0.6rem 1.2rem;
+      margin: 1rem 0 1.4rem;
+      border-radius: 2rem;
+      background: linear-gradient(
+        to left top,
+        $color-primary,
+        $color-secondary
+      );
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

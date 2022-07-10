@@ -1,8 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.redirection {
+  background-color: #f6f6f6; }
+  .redirection .location {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0.8rem;
+    background-color: #eaeaea; }
+    .redirection .location .location-wrapper {
+      display: flex;
+      gap: 0.8rem;
+      width: 155.54px; }
+      .redirection .location .location-wrapper img {
+        height: 1.1rem; }
+      .redirection .location .location-wrapper .location-current {
+        flex: 1;
+        font-weight: 600; }
+  .redirection .redirection-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.8rem 0;
+    text-align: center; }
+    .redirection .redirection-main h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.5;
+      max-width: 250px;
+      line-height: 1.5rem; }
+    .redirection .redirection-main p {
+      font-size: 1.1rem;
+      font-weight: 400; }
+    .redirection .redirection-main .redirect-button {
+      padding: 0.6rem 1.2rem;
+      margin: 1rem 0 1.4rem;
+      border-radius: 2rem;
+      background: linear-gradient(to left top, #9356dc, #ff79da);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
+
 header {
   display: flex;
   justify-content: center;
+  position: sticky;
   padding: 1.8rem 1rem 1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
+  header img {
+    height: 27px; }
 
 footer {
   display: flex;
