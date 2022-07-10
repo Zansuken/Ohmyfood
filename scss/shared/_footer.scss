@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #353535;
+  color: #fff;
+
+  .footer-logo,
+  .footer-icons {
+    height: 1.1rem;
+    filter: invert(1);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      a {
+        display: flex;
+        font-weight: 500;
+
+        img {
+          padding-right: 0.8rem;
+        }
+        span {
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}
