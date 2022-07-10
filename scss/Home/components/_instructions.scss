@@ -1,0 +1,57 @@
+@import "../../constants/index";
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.4rem 1rem;
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+
+  .instructions-list {
+    img {
+      height: 1.1rem;
+      margin-left: 0.7rem;
+      filter: opacity(0.5);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.3rem;
+    }
+    li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.3rem;
+      border-radius: 1rem;
+      background-color: $bg-light-gray;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+
+      .step-number {
+        width: 1.4rem;
+        height: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.7rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 0.8rem;
+        background-color: $color-primary;
+      }
+      .instruction-content {
+        font-weight: 600;
+      }
+    }
+  }
+}
