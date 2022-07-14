@@ -20,6 +20,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 /*
     Typographic tweaks!
@@ -80,6 +81,9 @@ input {
   border: none;
   background: none;
   appearance: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 /*
     9. Create a root stacking context
