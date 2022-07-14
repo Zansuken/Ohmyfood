@@ -36,6 +36,7 @@
           class="redirect-button"
           type="button"
           value="Explorer nos restaurants"
+          onclick="window.location.href='#restaurant-list__anchor'"
         />
       </div>
     </section>
@@ -71,76 +72,88 @@
       </div>
     </section>
     <main>
-      <h1>Restaurants</h1>
+      <h1 id="restaurant-list__anchor">Restaurants</h1>
       <div class="restaurants-cards__container">
-        <div class="restaurants-cards__item">
-          <div class="restaurant-thumbnail">
-            <span class="restaurant-status">Nouveau</span>
-          </div>
-          <div class="restaurant-infos__container">
-            <div class="restaurant-infos">
-              <h2>La palette du goût</h2>
-              <span class="restaurant-location">Ménilmontant</span>
-            </div>
-            <div class="restaurant-action">
-              <input type="checkbox" name="favorite" id="favorite" /><img
-                src="./public/medias/images/icons/heart.svg"
-                alt="heart icon"
+        <a href="/menu-1.html">
+          <div class="restaurants-cards__item">
+            <div class="restaurant-thumbnail">
+              <img
+                src="public/medias/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="restaurant thumbnail photo"
               />
+              <span class="restaurant-status">Nouveau</span>
+            </div>
+            <div class="restaurant-infos__container">
+              <div class="restaurant-infos">
+                <h2>La palette du goût</h2>
+                <span class="restaurant-location">Ménilmontant</span>
+              </div>
+              <div class="restaurant-action">
+                <input type="checkbox" name="favorite" id="favorite" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="restaurants-cards__item">
-          <div class="restaurant-thumbnail">
-            <span class="restaurant-status">Nouveau</span>
-          </div>
-          <div class="restaurant-infos__container">
-            <div class="restaurant-infos">
-              <h2>La note enchantée</h2>
-              <span class="restaurant-location">Charonne</span>
-            </div>
-            <div class="restaurant-action">
-              <input type="checkbox" name="favorite" id="favorite" /><img
-                src="./public/medias/images/icons/heart.svg"
-                alt="heart icon"
+        </a>
+        <a href="/menu-2.html">
+          <div class="restaurants-cards__item">
+            <div class="restaurant-thumbnail">
+              <img
+                src="public/medias/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="restaurant thumbnail photo"
               />
+              <span class="restaurant-status">Nouveau</span>
+            </div>
+            <div class="restaurant-infos__container">
+              <div class="restaurant-infos">
+                <h2>La note enchantée</h2>
+                <span class="restaurant-location">Charonne</span>
+              </div>
+              <div class="restaurant-action">
+                <input type="checkbox" name="favorite" id="favorite" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="restaurants-cards__item">
-          <div class="restaurant-thumbnail">
-            <!-- <span class="restaurant-status">Nouveau</span> -->
-          </div>
-          <div class="restaurant-infos__container">
-            <div class="restaurant-infos">
-              <h2>À la française</h2>
-              <span class="restaurant-location">Cité Rouge</span>
-            </div>
-            <div class="restaurant-action">
-              <input type="checkbox" name="favorite" id="favorite" /><img
-                src="./public/medias/images/icons/heart.svg"
-                alt="heart icon"
+        </a>
+        <a href="/menu-3.html">
+          <div class="restaurants-cards__item">
+            <div class="restaurant-thumbnail">
+              <img
+                src="public/medias/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="restaurant thumbnail photo"
               />
+              <!-- <span class="restaurant-status">Nouveau</span> -->
+            </div>
+            <div class="restaurant-infos__container">
+              <div class="restaurant-infos">
+                <h2>À la française</h2>
+                <span class="restaurant-location">Cité Rouge</span>
+              </div>
+              <div class="restaurant-action">
+                <input type="checkbox" name="favorite" id="favorite" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="restaurants-cards__item">
-          <div class="restaurant-thumbnail">
-            <!-- <span class="restaurant-status">Nouveau</span> -->
-          </div>
-          <div class="restaurant-infos__container">
-            <div class="restaurant-infos">
-              <h2>Le délice des sens</h2>
-              <span class="restaurant-location">Folie-Méricourt</span>
-            </div>
-            <div class="restaurant-action">
-              <input type="checkbox" name="favorite" id="favorite" /><img
-                src="./public/medias/images/icons/heart.svg"
-                alt="heart icon"
+        </a>
+        <a href="/menu-4.html">
+          <div class="restaurants-cards__item">
+            <div class="restaurant-thumbnail">
+              <img
+                src="public/medias/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="restaurant thumbnail photo"
               />
+              <!-- <span class="restaurant-status">Nouveau</span> -->
+            </div>
+            <div class="restaurant-infos__container">
+              <div class="restaurant-infos">
+                <h2>Le délice des sens</h2>
+                <span class="restaurant-location">Folie-Méricourt</span>
+              </div>
+              <div class="restaurant-action">
+                <input type="checkbox" name="favorite" id="favorite" />
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </main>
     <footer>
