@@ -1,0 +1,9 @@
+@import "../../constants/index";
+
+.menu-content {
+  background: $bg-gray;
+  z-index: 2;
+  margin-top: -50px;
+  border-radius: 2rem 2rem 0 0;
+  padding: 2rem 1rem;
+}
