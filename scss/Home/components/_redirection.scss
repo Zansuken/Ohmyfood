@@ -1,4 +1,5 @@
 @import "../../constants/index";
+@import "../../shared/button";
 
 .redirection {
   background-color: $bg-light-gray;
@@ -30,7 +31,7 @@
     text-align: center;
 
     h1 {
-      font-size: 1.5rem;
+      font-size: $font-size-h1;
       font-weight: 800;
       line-height: 1.5;
       max-width: 250px;
@@ -41,19 +42,7 @@
       font-weight: 400;
     }
     .redirect-button {
-      padding: 0.6rem 1.2rem;
-      margin: 1rem 0 1.4rem;
-      border-radius: 2rem;
-      background: linear-gradient(
-        to left top,
-        $color-primary,
-        $color-secondary
-      );
-      color: #fff;
-      font-size: 0.9rem;
-      font-weight: 400;
-      line-height: 1.5rem;
-      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+      @include button();
     }
   }
 }
