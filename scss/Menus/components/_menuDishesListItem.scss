@@ -11,6 +11,9 @@
   h3 {
     font-size: $font-size-h3;
     font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   p {
@@ -23,6 +26,7 @@
   }
 
   .left {
+    max-width: 246.36px;
     padding: 0.5rem 0 0.5rem 0.5rem;
     flex: 1;
 
