@@ -1,0 +1,23 @@
+@import "../constants/index";
+
+.loading-component {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation-name: component-loading;
+  animation-duration: 3s;
+
+  .loading-icon__container {
+    max-width: 300px;
+    width: 100%;
+    img {
+      border-radius: 0.8rem;
+    }
+  }
+}
