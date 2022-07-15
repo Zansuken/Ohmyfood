@@ -5,4 +5,13 @@
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 1.5rem;
+  .menu-content__actions {
+    display: flex;
+    justify-content: center;
+    .order-button {
+      @include button();
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
 }
