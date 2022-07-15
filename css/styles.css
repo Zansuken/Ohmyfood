@@ -73,9 +73,11 @@
       font-weight: 400;
       line-height: 1.5rem;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out; }
+      transition: filter 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out; }
       .redirection .redirection-main .redirect-button:hover {
-        transform: scale(1.05); }
+        filter: brightness(1.1);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4); }
 
 .instructions {
   display: flex;
@@ -205,7 +207,7 @@
         margin-top: 6.4px; }
         .restaurants-cards__item .restaurant-infos__container .restaurant-action input:hover {
           cursor: pointer; }
-        .restaurants-cards__item .restaurant-infos__container .restaurant-action input:checked::after {
+        .restaurants-cards__item .restaurant-infos__container .restaurant-action input::after {
           content: "";
           position: absolute;
           top: 0;
@@ -216,6 +218,9 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
+          transform: scale(0);
+          transition: transform 0.3s ease-in-out; }
+        .restaurants-cards__item .restaurant-infos__container .restaurant-action input:checked::after, .restaurants-cards__item .restaurant-infos__container .restaurant-action input:hover::after {
           transform: scale(1.05); }
 
 .restaurants-cards__main {
@@ -269,7 +274,7 @@
       margin-top: 6.4px; }
       .menu-content__header .menu-content-action input:hover {
         cursor: pointer; }
-      .menu-content__header .menu-content-action input:checked::after {
+      .menu-content__header .menu-content-action input::after {
         content: "";
         position: absolute;
         top: 0;
@@ -280,6 +285,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out; }
+      .menu-content__header .menu-content-action input:checked::after, .menu-content__header .menu-content-action input:hover::after {
         transform: scale(1.05); }
     .menu-content__header .menu-content-action input {
       margin-top: 0; }
@@ -302,11 +310,13 @@
       font-weight: 400;
       line-height: 1.5rem;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease-in-out;
+      transition: filter 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
       padding-left: 2.5rem;
       padding-right: 2.5rem; }
       .menu-content__body .menu-content__actions .order-button:hover {
-        transform: scale(1.05); }
+        filter: brightness(1.1);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4); }
 
 .menu-content__dishes {
   display: flex;
