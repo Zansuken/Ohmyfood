@@ -91,7 +91,9 @@
         transition: all 0.3s ease-in-out;
       }
 
-      &:checked {
+      &:checked,
+      &:focus {
+        outline: none;
         & + .price {
           transform: translate(0);
         }
