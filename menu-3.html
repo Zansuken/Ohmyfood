@@ -8,6 +8,184 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Ohmyfood</h1>
+    <header>
+      <a href="/index.html"
+        ><img
+          src="public/medias/images/icons/arrow-left.svg"
+          alt="return back icon"
+      /></a>
+      <img
+        src="public/medias/images/logo/ohmyfood@2x.svg"
+        alt="ohmyfood logo"
+      />
+    </header>
+    <main class="menu__main">
+      <div class="menu-banner">
+        <img
+          src="public/medias/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="restaurant image banner"
+        />
+      </div>
+      <div class="menu-content">
+        <div class="menu-content__header">
+          <h1>À la française</h1>
+          <div class="menu-content-action">
+            <input type="checkbox" name="favorite" id="favorite" />
+          </div>
+        </div>
+        <div class="menu-content__body">
+          <div class="menu-content__dishes">
+            <h2>ENTRÉES</h2>
+            <ul class="menu-content__dishes-list">
+              <li>
+                <label class="left" for="addToOrder1">
+                <h3>Tartare de poulpe acidulé</h3><p>Aux zests d'orange</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder1" >
+                  <div class="price">
+                    <span class="amount">25</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder2">
+                <h3>Velouté de légumes d'antan</h3><p>Carotte, panais, topinambour</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder2" >
+                  <div class="price">
+                    <span class="amount">35</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder3">
+                <h3>Soupe à l'oignon</h3><p>Revisitée</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder3" >
+                  <div class="price">
+                    <span class="amount">20</span><span class="currency">€</span>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content__dishes">
+            <h2>PLATS</h2>
+            <ul class="menu-content__dishes-list">
+              <li>
+                <label class="left" for="addToOrder4">
+                <h3>Coquilles Saint-Jacques</h3><p>Accompagnées d'une purée de panais</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder4" >
+                  <div class="price">
+                    <span class="amount">40</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder5">
+                <h3>Magret de canard</h3><p>Et parmentier de pommes de terres</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder5" >
+                  <div class="price">
+                    <span class="amount">35</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder6">
+                <h3>Pigeonneau d'Ille-et-Vilaine</h3><p>Sur son lit de gnocchis au légumes</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder6" >
+                  <div class="price">
+                    <span class="amount">44</span><span class="currency">€</span>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content__dishes">
+            <h2>DESSERTS</h2>
+            <ul class="menu-content__dishes-list">
+              <li>
+                <label class="left" for="addToOrder7">
+                <h3>Pétales de violettes glacés</h3><p>Et purée de noisettes</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder7" >
+                  <div class="price">
+                    <span class="amount">18</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder8">
+                <h3>Fondant au chocolat</h3><p>Revisité</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder8" >
+                  <div class="price">
+                    <span class="amount">22</span><span class="currency">€</span>
+                  </div>
+              </li>
+              <li>
+                <label class="left" for="addToOrder9">
+                <h3>Millefeuille croustillant</h3><p>Myrtilles et pâte d'amande</p>
+                </label>
+                <div class="right">
+                  <input type="checkbox" name="addToOrder" id="addToOrder9" >
+                  <div class="price">
+                    <span class="amount">23</span><span class="currency">€</span>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content__actions">
+            <input
+            class="order-button"
+            type="button"
+            value="Commander"
+            />
+          </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="./public/medias/images/logo/ohmyfood@2x.svg"
+        alt="ohmyfood logo"
+        class="footer-logo"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="./public/medias/images/icons/spoon-knife.svg"
+                alt="spoon & knife icon"
+                class="footer-icons"
+              />
+              <span class="navigation-link">Proposer un restaurant</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./public/medias/images/icons/user-tie.svg"
+                alt="partner icon"
+                class="footer-icons"
+              />
+              <span class="navigation-link">Devenir partenaire</span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <span class="navigation-lin k">Mentions légales</span></a
+            >
+          </li>
+          <li>
+            <a href="#"> <span class="navigation-link">Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
