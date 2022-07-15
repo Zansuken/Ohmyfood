@@ -3,6 +3,8 @@
 .restaurants-cards__main {
   background-color: $bg-light-gray;
   padding: 2.4rem 1rem;
+  display: flex;
+  flex-direction: column;
 
   h1 {
     font-size: $font-size-h1;

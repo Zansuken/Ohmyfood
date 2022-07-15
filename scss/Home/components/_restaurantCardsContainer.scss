@@ -8,6 +8,9 @@
   gap: 1rem;
   text-align: center;
   padding-bottom: 0.5rem;
+  max-width: 1425px;
+  width: 100%;
+  align-self: center;
 
   @media screen and (min-width: 375px) {
     flex-direction: row;
