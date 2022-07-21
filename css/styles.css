@@ -235,6 +235,10 @@
       border-radius: 1rem;
       background-color: #f6f6f6;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
+      .instructions .instructions-list li:hover {
+        background-color: #9256dc1e; }
+        .instructions .instructions-list li:hover img {
+          filter: invert(41%) sepia(23%) saturate(6470%) hue-rotate(244deg) brightness(92%) contrast(86%); }
       .instructions .instructions-list li .step-number {
         width: 1.4rem;
         height: 1.4rem;
@@ -424,7 +428,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url("../../../public/medias/images/icons/heart-filled.svg");
+          background-image: url("https://zansuken.github.io/Ohmyfood/public/medias/images/icons/heart-filled.svg");
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
@@ -575,7 +579,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../../../public/medias/images/icons/heart-filled.svg");
+        background-image: url("https://zansuken.github.io/Ohmyfood/public/medias/images/icons/heart-filled.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -1168,7 +1172,8 @@ footer {
         display: flex;
         font-weight: 500; }
         footer nav ul a img {
-          padding-right: 0.8rem; }
+          padding-right: 0.8rem;
+          width: 30px; }
         footer nav ul a span {
           line-height: 100%; }
 

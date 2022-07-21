@@ -38,6 +38,14 @@
       background-color: $bg-light-gray;
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 
+      &:hover {
+        background-color: $color-primary-transparent;
+        img {
+          filter: invert(41%) sepia(23%) saturate(6470%) hue-rotate(244deg)
+            brightness(92%) contrast(86%);
+        }
+      }
+
       .step-number {
         width: 1.4rem;
         height: 1.4rem;
