@@ -4,7 +4,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.5rem;
   background-color: $bg-dark;
   color: #fff;
@@ -13,6 +13,15 @@ footer {
   .footer-icons {
     height: 1.1rem;
     filter: invert(1);
+  }
+  .footer-content__wrapper {
+    width: 100%;
+    @media (min-width: 1200px) {
+      max-width: 1039px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
 
   nav {
