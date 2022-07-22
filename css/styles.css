@@ -385,6 +385,8 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
   .restaurants-cards__item:nth-child(2) .restaurant-thumbnail img {
     object-position: center -146px; }
+  .restaurants-cards__item:hover .restaurant-thumbnail img {
+    transform: scale(1.2); }
   .restaurants-cards__item .restaurant-thumbnail {
     position: relative;
     height: 100%;
@@ -395,7 +397,8 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center -50px; }
+      object-position: center -50px;
+      transition: transform 0.3s ease-in-out; }
     .restaurants-cards__item .restaurant-thumbnail .restaurant-status {
       margin: 1rem 1rem 0 0;
       position: absolute;
