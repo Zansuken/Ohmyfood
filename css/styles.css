@@ -234,7 +234,8 @@
       padding: 1.3rem;
       border-radius: 1rem;
       background-color: #f6f6f6;
-      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease-in-out; }
       .instructions .instructions-list li:hover {
         background-color: #9256dc1e; }
         .instructions .instructions-list li:hover img {
@@ -637,6 +638,18 @@
   align-items: center;
   gap: 1.5rem;
   margin-top: 1.5rem; }
+  .menu-content__body .menu-content__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; }
+    @media (min-width: 1200px) {
+      .menu-content__body .menu-content__main-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-top: 0; } }
   .menu-content__body .menu-content__dishes:nth-of-type(1) {
     animation-name: appear-from-bottom__step1;
     animation-duration: 2s; }
@@ -712,8 +725,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
-  max-width: 342.39px; }
+  width: 325px; }
   .menu-content__dishes h2 {
     font-size: 20px;
     font-weight: 500; }
@@ -816,19 +828,79 @@
 .menu-content__dishes-list li {
   height: 65px;
   width: 100%;
-  max-width: 342.4px;
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  position: relative; }
+  .menu-content__dishes-list li input:checked + label .right {
+    margin-right: 0; }
+    .menu-content__dishes-list li input:checked + label .right .checked-icon img {
+      transform: rotate(-360deg); }
+  @media screen and (min-width: 768px) {
+    .menu-content__dishes-list li input:focus + label .right {
+      margin-right: 0; }
+      .menu-content__dishes-list li input:focus + label .right .checked-icon img {
+        transform: rotate(-360deg); } }
+  .menu-content__dishes-list li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+    border-radius: 0.8rem;
+    background-color: #f6f6f6;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; }
+    .menu-content__dishes-list li label:hover .right {
+      margin-right: 0; }
+      .menu-content__dishes-list li label:hover .right .checked-icon img {
+        transform: rotate(-360deg); }
+    .menu-content__dishes-list li label .left {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; }
+    .menu-content__dishes-list li label .right {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      gap: 0.5rem;
+      margin-right: -55px;
+      transition: all 0.3s ease-in-out; }
+      .menu-content__dishes-list li label .right .price {
+        display: flex;
+        width: min-content;
+        padding-bottom: 0.6rem;
+        padding-right: 0.2rem; }
+      .menu-content__dishes-list li label .right .checked-icon {
+        height: 100%;
+        width: 55px;
+        background-color: #99e2d0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0.8rem 0.8rem 0; }
+        .menu-content__dishes-list li label .right .checked-icon img {
+          background-color: white;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          padding: 0.2rem;
+          transform: rotate(-180deg);
+          transition: all 0.3s ease-in-out; }
   .menu-content__dishes-list li h3 {
     font-size: 16px;
     font-weight: 800;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    padding-left: 0.5rem; }
   .menu-content__dishes-list li p {
+    padding-left: 0.5rem;
     font-size: 0.8rem;
     white-space: nowrap;
     overflow: hidden;
@@ -836,71 +908,6 @@
   .menu-content__dishes-list li span {
     font-size: 0.9rem;
     font-weight: 800; }
-  .menu-content__dishes-list li .left {
-    max-width: 246.36px;
-    width: 100%;
-    padding: 0.5rem 0 0.5rem 0.5rem;
-    flex: 1;
-    overflow: hidden; }
-    .menu-content__dishes-list li .left:hover {
-      cursor: pointer; }
-  .menu-content__dishes-list li:hover {
-    cursor: pointer; }
-    .menu-content__dishes-list li:hover .right .price {
-      transform: translateX(0); }
-    .menu-content__dishes-list li:hover .right input::before {
-      right: 0; }
-    .menu-content__dishes-list li:hover .right input::after {
-      right: 16px; }
-  .menu-content__dishes-list li .right {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    height: 100%;
-    width: 96.04px;
-    border-radius: 0 0.8rem 0.8rem 0;
-    overflow: hidden; }
-    .menu-content__dishes-list li .right .price {
-      padding: 0.5rem 0;
-      margin-right: 1rem;
-      transform: translateX(200%);
-      transition: transform 0.3s ease-in-out; }
-    .menu-content__dishes-list li .right input {
-      width: 55px;
-      height: 100%; }
-      .menu-content__dishes-list li .right input::before {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 100%;
-        background-color: #99e2d0;
-        position: absolute;
-        top: 0;
-        right: -50%;
-        border-radius: 0 0.8rem 0.8rem 0;
-        transition: all 0.3s ease-in-out; }
-      .menu-content__dishes-list li .right input::after {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        background: url("https://zansuken.github.io/Ohmyfood/public/medias/images/icons/checkmark.svg") no-repeat center;
-        background-color: white;
-        background-size: 12px;
-        border-radius: 50%;
-        position: absolute;
-        top: calc(50% - 8px);
-        right: -50%;
-        transition: all 0.3s ease-in-out; }
-      .menu-content__dishes-list li .right input:checked, .menu-content__dishes-list li .right input:focus {
-        outline: none; }
-        .menu-content__dishes-list li .right input:checked + .price, .menu-content__dishes-list li .right input:focus + .price {
-          transform: translate(0); }
-        .menu-content__dishes-list li .right input:checked::before, .menu-content__dishes-list li .right input:focus::before {
-          right: 0; }
-        .menu-content__dishes-list li .right input:checked::after, .menu-content__dishes-list li .right input:focus::after {
-          right: 16px; }
 
 @keyframes component-loading {
   0% {

@@ -7,6 +7,21 @@
   gap: 1.5rem;
   margin-top: 1.5rem;
 
+  .menu-content__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-top: 0;
+    }
+  }
+
   .menu-content__dishes:nth-of-type(1) {
     animation-name: appear-from-bottom__step1;
     animation-duration: 2s;
