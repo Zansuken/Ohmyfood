@@ -218,7 +218,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2.4rem 1rem; }
-  .instructions h1 {
+  .instructions h2 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.2rem; }
@@ -870,16 +870,26 @@
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   background-color: #f6f6f6;
   position: relative; }
-  .menu-content__dishes-list li input:checked + label .right {
+  .menu-content__dishes-list li input:checked ~ .content-wrapper .right {
     margin-right: 0; }
-    .menu-content__dishes-list li input:checked + label .right .checked-icon img {
+    .menu-content__dishes-list li input:checked ~ .content-wrapper .right .checked-icon img {
       transform: rotate(-360deg); }
   @media screen and (min-width: 768px) {
-    .menu-content__dishes-list li input:focus + label .right {
+    .menu-content__dishes-list li input:focus .right {
       margin-right: 0; }
-      .menu-content__dishes-list li input:focus + label .right .checked-icon img {
+      .menu-content__dishes-list li input:focus .right .checked-icon img {
         transform: rotate(-360deg); } }
   .menu-content__dishes-list li label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer; }
+    .menu-content__dishes-list li label:hover + .content-wrapper .right {
+      margin-right: 0; }
+      .menu-content__dishes-list li label:hover + .content-wrapper .right .checked-icon img {
+        transform: rotate(-360deg); }
+  .menu-content__dishes-list li .content-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -892,27 +902,31 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out; }
-    .menu-content__dishes-list li label:hover .right {
+    .menu-content__dishes-list li .content-wrapper:hover .right {
       margin-right: 0; }
-      .menu-content__dishes-list li label:hover .right .checked-icon img {
+      .menu-content__dishes-list li .content-wrapper:hover .right .checked-icon img {
         transform: rotate(-360deg); }
-    .menu-content__dishes-list li label .left {
+    .menu-content__dishes-list li .content-wrapper .left {
       display: flex;
       flex-direction: column;
-      overflow: hidden; }
-    .menu-content__dishes-list li label .right {
+      justify-content: center;
+      overflow: hidden;
+      height: 100%; }
+    .menu-content__dishes-list li .content-wrapper .right {
       display: flex;
       align-items: flex-end;
       height: 100%;
       gap: 0.5rem;
       margin-right: -55px;
       transition: all 0.3s ease-in-out; }
-      .menu-content__dishes-list li label .right .price {
+      .menu-content__dishes-list li .content-wrapper .right .price {
         display: flex;
+        flex-direction: row;
+        align-items: flex-end;
         width: min-content;
         padding-bottom: 0.6rem;
         padding-right: 0.2rem; }
-      .menu-content__dishes-list li label .right .checked-icon {
+      .menu-content__dishes-list li .content-wrapper .right .checked-icon {
         height: 100%;
         width: 55px;
         background-color: #99e2d0;
@@ -920,7 +934,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 0 0.8rem 0.8rem 0; }
-        .menu-content__dishes-list li label .right .checked-icon img {
+        .menu-content__dishes-list li .content-wrapper .right .checked-icon img {
           background-color: white;
           border-radius: 50%;
           width: 20px;

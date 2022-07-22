@@ -10,8 +10,17 @@
   background-color: $bg-light-gray;
   position: relative;
   input {
-    &:checked {
-      + label {
+    &:checked ~ .content-wrapper {
+      .right {
+        margin-right: 0;
+
+        .checked-icon img {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      &:focus {
         .right {
           margin-right: 0;
 
@@ -21,22 +30,25 @@
         }
       }
     }
-    @media screen and (min-width: 768px) {
-      &:focus {
-        + label {
-          .right {
-            margin-right: 0;
+  }
 
-            .checked-icon img {
-              transform: rotate(-360deg);
-            }
-          }
+  label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+    &:hover {
+      + .content-wrapper .right {
+        margin-right: 0;
+        .checked-icon img {
+          transform: rotate(-360deg);
         }
       }
     }
   }
 
-  label {
+  .content-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,7 +72,9 @@
     .left {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       overflow: hidden;
+      height: 100%;
     }
     .right {
       display: flex;
@@ -71,6 +85,8 @@
       transition: all 0.3s ease-in-out;
       .price {
         display: flex;
+        flex-direction: row;
+        align-items: flex-end;
         width: min-content;
         padding-bottom: 0.6rem;
         padding-right: 0.2rem;
