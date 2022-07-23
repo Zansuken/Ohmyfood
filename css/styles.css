@@ -142,7 +142,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    padding: 1.8rem 0;
+    padding: 1.8rem 0.8rem;
     text-align: center; }
     .redirection .redirection-main h1 {
       font-size: 24px;
@@ -326,7 +326,7 @@
   max-width: 1425px;
   width: 100%;
   align-self: center; }
-  @media screen and (min-width: 376px) {
+  @media screen and (min-width: 415px) {
     .restaurants-cards__container ul {
       flex-direction: row;
       justify-content: space-between;
