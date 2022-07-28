@@ -38,11 +38,13 @@
     height: 100%;
     z-index: 10;
     cursor: pointer;
-    &:hover {
-      + .content-wrapper .right {
-        margin-right: 0;
-        .checked-icon img {
-          transform: rotate(-360deg);
+    @media screen and (min-width: 768px) {
+      &:hover {
+        + .content-wrapper .right {
+          margin-right: 0;
+          .checked-icon img {
+            transform: rotate(-360deg);
+          }
         }
       }
     }
@@ -61,11 +63,15 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    &:hover {
-      .right {
-        margin-right: 0;
-        .checked-icon img {
-          transform: rotate(-360deg);
+    @media screen {
+    }
+    @media screen and (min-width: 768px) {
+      &:hover {
+        .right {
+          margin-right: 0;
+          .checked-icon img {
+            transform: rotate(-360deg);
+          }
         }
       }
     }

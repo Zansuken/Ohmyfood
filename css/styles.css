@@ -458,8 +458,11 @@
           background-size: contain;
           transform: scale(0);
           transition: transform 0.3s ease-in-out; }
-        .restaurants-cards__item .restaurant-infos__container .restaurant-action input:checked::after, .restaurants-cards__item .restaurant-infos__container .restaurant-action input:hover::after {
+        .restaurants-cards__item .restaurant-infos__container .restaurant-action input:checked::after {
           transform: scale(1.05); }
+        @media screen and (min-width: 768px) {
+          .restaurants-cards__item .restaurant-infos__container .restaurant-action input:hover::after {
+            transform: scale(1.05); } }
 
 @keyframes component-loading {
   0% {
@@ -631,8 +634,11 @@
         background-size: contain;
         transform: scale(0);
         transition: transform 0.3s ease-in-out; }
-      .menu-content__header .menu-content-action input:checked::after, .menu-content__header .menu-content-action input:hover::after {
+      .menu-content__header .menu-content-action input:checked::after {
         transform: scale(1.05); }
+      @media screen and (min-width: 768px) {
+        .menu-content__header .menu-content-action input:hover::after {
+          transform: scale(1.05); } }
     .menu-content__header .menu-content-action input {
       margin-top: 0; }
 
@@ -906,10 +912,11 @@
     height: 100%;
     z-index: 10;
     cursor: pointer; }
-    .menu-content__dishes-list li label:hover + .content-wrapper .right {
-      margin-right: 0; }
-      .menu-content__dishes-list li label:hover + .content-wrapper .right .checked-icon img {
-        transform: rotate(-360deg); }
+    @media screen and (min-width: 768px) {
+      .menu-content__dishes-list li label:hover + .content-wrapper .right {
+        margin-right: 0; }
+        .menu-content__dishes-list li label:hover + .content-wrapper .right .checked-icon img {
+          transform: rotate(-360deg); } }
   .menu-content__dishes-list li .content-wrapper {
     display: flex;
     align-items: center;
@@ -923,10 +930,11 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out; }
-    .menu-content__dishes-list li .content-wrapper:hover .right {
-      margin-right: 0; }
-      .menu-content__dishes-list li .content-wrapper:hover .right .checked-icon img {
-        transform: rotate(-360deg); }
+    @media screen and (min-width: 768px) {
+      .menu-content__dishes-list li .content-wrapper:hover .right {
+        margin-right: 0; }
+        .menu-content__dishes-list li .content-wrapper:hover .right .checked-icon img {
+          transform: rotate(-360deg); } }
     .menu-content__dishes-list li .content-wrapper .left {
       display: flex;
       flex-direction: column;
